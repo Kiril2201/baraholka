@@ -61,3 +61,63 @@ background-color: #9DF388;
 .add-card{
     background-color: #E79292;
 }
+.contain {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.item {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.item h1 {
+    font-size: 20px;
+}
+
+.price {
+    background: gray;
+    font-style: italic;
+}
+.chair{
+    height: 129;
+    width: 180;
+    margin-left: 120px;
+}
+.sofa{
+    height: 129;
+    width: 180;
+}
+.hagi_vagi{
+    height: 129;
+    width: 180;
+}
+.green_alien{
+    height: 129;
+    width: 180;
+}
+.blue_alien{
+    height: 129;
+    width: 180;
+}
+.upTitles{
+    display: flex;
+    justify-content: space-between;
+}
+.upPhotos{
+    display: flex;
+    justify-content: space-between;
+}
+.chair_title{
+    margin-left: 120px;
+}
+
