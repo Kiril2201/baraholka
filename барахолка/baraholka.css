@@ -241,3 +241,29 @@ body {
         }
     }
 }
+.first{
+    background-color: #C6BF83;
+    height: 67px;
+    width: 142px;
+    margin-left: 50px;
+    margin-top: 300px;
+}
+.second{
+    background-color: #C6BF83;
+    height: 67px;
+    width: 142px;
+    margin-left: 50px;
+    margin-top: 300px;
+}
+.third{
+    background-color: #C6BF83;
+    height: 67px;
+    width: 142px;
+    margin-left: 50px;
+    margin-top: 300px;
+}
+.letters{
+    display: flex;
+    justify-content: start;
+}
+ 

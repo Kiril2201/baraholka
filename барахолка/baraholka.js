@@ -126,57 +126,14 @@ const generateBg = () => {
     document.body.style.background = getRandomColor();
 }
 
-// добавить на страницу случайную фразу из массива PHRASES,
-// написанную случайным шрифтом из массива FONTS
-const generateWords = () => {
-    dataContainer.querySelector('h1').textContent = getRandomEl(PHRASES);
-    dataContainer.querySelector('h1').style.fontFamily = getRandomEl(FONTS);
-}
 
 // добавить обработчики на кнопки ручной генерации
 generateBgBtn.addEventListener('click', generateBg)
-generateWordsBtn.addEventListener('click', generateWords)
 
-// включаем автоматическую генерацию
-startBtn.addEventListener('click', () => {
-    // записываем значение в timerId, чтоб его можно было потом сбросить
-    timerId = setInterval(() => {
-        generateWords();
-        generateBg();
-    }, 500);
 
-    // дизейблим кнопки
-    generateWordsBtn.disabled = true;
-    generateBgBtn.disabled = true;
-    startBtn.disabled = true;
-    stopBtn.disabled = false;
-})
 
-// останавливаем автоматическую генерацию
-stopBtn.addEventListener('click', () => {
-    // очищаем timerId
-    clearInterval(timerId);
 
-    // активируем кнопки
-    generateWordsBtn.disabled = false;
-    generateBgBtn.disabled = false;
-    startBtn.disabled = false;
-    stopBtn.disabled = true;
-})
 
-// создаем отложенную задачу
-delayBtn.addEventListener('click', () => {
-    // записываем значение в delayTimerId
-    delayTimerId = setTimeout(() => {
-        alert('Та-дам!')
-    }, 1000)
-})
-
-// отменяем отложенную задачу до истечения 1000 мс
-cancelBtn.addEventListener('click', () => {
-    // ощищаем таймер, и ничего не выведется
-    clearTimeout(delayTimerId);
-})
 
 
 
