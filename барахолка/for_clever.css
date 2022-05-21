@@ -38,6 +38,38 @@ body{
     font-family: 'Rubik Glitch', cursive;
     color:rgba(100, 0, 0, 0.685);
 }
-.ant_eat_name{
-    
+.ant_eater{
+    height: 250px;
+    width: 413px;
+    position: absolute;
+    left: 150px;
+    top: 55%;
 }
+.ant_eat_name{
+    position: absolute;
+    top: 47%;
+    left: 200px;
+    font-family: 'Train One', cursive;
+}
+.bin1{
+    height: 350px;
+    width: 317px;
+    position: absolute;
+    right: 300px;
+    top: 90px;
+
+}
+.bin2{
+    width: 292px;
+    position: absolute;
+    right: 320px;
+    bottom: 100px;
+}
+.bins_price{
+    position: absolute;
+    bottom: 50px;
+    right: 140px;
+    font-family: 'Cinzel', serif;
+    width: 100px;
+}
+
